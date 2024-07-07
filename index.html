@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eso Level Estimator 8000</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #fdf6e3; /* Solarized light background */
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #268bd2; /* Solarized blue */
+        }
+        h1 img {
+            margin-right: 10px;
+        }
+        #messageInput {
+            width: 80%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            resize: none;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2aa198; /* Solarized cyan */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #responseArea {
+            margin-top: 20px;
+            padding: 20px;
+            width: 80%;
+            font-size: 18px;
+            background-color: #eee8d5; /* Solarized light */
+            color: #657b83; /* Solarized base00 */
+            border: 1px solid #93a1a1; /* Solarized base1 */
+        }
+        footer {
+            margin-top: 20px;
+            color: #839496; /* Solarized base0 */
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1><img src="img/logo.png" alt="Logo" width="50" height="50">Eso Level Estimator 8000</h1>
+    <textarea id="messageInput" placeholder="Type your message here" rows="4"></textarea>
+    <button onclick="sendMessage(document.getElementById('messageInput').value)" id="sendButton">Estimate eso level!</button>
+    <div id="responseArea"></div>
+    <footer>Powered by Nostr, AI and open-source. Expanding consciousness in the universe since 2024.</footer>
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
