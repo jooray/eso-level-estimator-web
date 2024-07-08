@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eso Level Estimator 8000</title>
     <style>
         body {
@@ -17,13 +18,18 @@
         }
         h1 {
             display: flex;
+            flex-direction: column; /* Align logo and text vertically */
             align-items: center;
             justify-content: center;
             font-size: 24px;
             color: #268bd2; /* Solarized blue */
         }
         h1 img {
-            margin-right: 10px;
+            margin-bottom: 10px; /* Space between logo and text */
+            width: 15vw; /* Responsive width based on viewport width */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 160px; /* Maximum width */
+            min-width: 50px; /* Minimum width */
         }
         #messageInput {
             width: 80%;
@@ -54,11 +60,25 @@
             color: #839496; /* Solarized base0 */
             font-size: 14px;
         }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 18px; /* Adjusted for smaller screens */
+            }
+            #messageInput, #responseArea, button {
+                width: 90%; /* Increase width for smaller screens */
+                font-size: 14px; /* Smaller font size for better readability */
+            }
+            button {
+                padding: 8px 16px; /* Slightly smaller padding */
+            }
+        }
     </style>
 </head>
 <body>
-    <h1><img src="img/logo.png" alt="Logo" width="50" height="50">Eso Level Estimator 8000</h1>
-    <textarea id="messageInput" placeholder="Type your message here" rows="4"></textarea>
+    <h1><img src="img/logo.png" alt="Logo" width="80" height="80">Eso Level Estimator 8000</h1>
+    <textarea id="messageInput" placeholder="Enter a concept and higher artificial intelligence will determine it's eso level" rows="3"></textarea>
     <button onclick="sendMessage(document.getElementById('messageInput').value)" id="sendButton">Estimate eso level!</button>
     <div id="responseArea"></div>
     <footer>Powered by Nostr, AI and open-source. Expanding consciousness in the universe since 2024.</footer>
