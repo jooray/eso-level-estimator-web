@@ -1,0 +1,14 @@
+{
+  "short_name": "EsoLevel",
+  "name": "ESO Level Calculator 8000",
+  "icons": [
+    {
+      "src": "/esolevel/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/esolevel/",
+  "display": "standalone",
+  "theme_color": "#eedcdc"
+}

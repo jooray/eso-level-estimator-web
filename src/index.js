@@ -28,7 +28,9 @@ const relays = [
     'wss://nos.lol',
     'wss://nostr.bitcoiner.social',
     'wss://relay.nostr.band',
-    'wss://relay.damus.io'
+    'wss://relay.damus.io',
+    'wss://nostr.einundzwanzig.space',
+    'wss://relay.nostrplebs.com'
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
