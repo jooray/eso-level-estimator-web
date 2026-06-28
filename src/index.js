@@ -26,11 +26,9 @@ const keyPair = generateKeyPair();
 const pool = new SimplePool();
 const relays = [
     'wss://nos.lol',
+    'wss://relay.primal.net',
     'wss://nostr.bitcoiner.social',
-    'wss://relay.nostr.band',
-    'wss://relay.damus.io',
-    'wss://nostr.einundzwanzig.space',
-    'wss://relay.nostrplebs.com'
+    'wss://relay.damus.io'
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
