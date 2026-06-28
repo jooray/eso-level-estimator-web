@@ -3,7 +3,7 @@
   "name": "ESO Level Calculator 8000",
   "icons": [
     {
-      "src": "/esolevel/icon.png",
+      "src": "img/icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
