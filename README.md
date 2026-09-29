@@ -8,7 +8,6 @@ Use it [online](https://juraj.bednar.io/esolevel)
 **Related projects**
 
 - [nalgorithm](https://github.com/jooray/nalgorithm): rank your Nostr timeline by what matters to you, using an LLM
-- [datasetgen-ng](https://github.com/jooray/datasetgen-ng): generate fine-tuning datasets from plain text
 - [rag-backend](https://github.com/jooray/rag-backend): a simple backend with a RAG pipeline
 
 **Full project showcase:** [Eso Level Estimator 8000 in my project showcase](https://juraj.bednar.io/showcase/#AI-01), or [all my projects](https://juraj.bednar.io/showcase/).
